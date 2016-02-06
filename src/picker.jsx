@@ -256,6 +256,8 @@ let Picker = React.createClass({
             return
         let list = React.findDOMNode(_list)
         list.scrollTop = this.optionHeight * parseInt(arr[1], 10)
+
+        this.dismiss()
     }
 
 })
